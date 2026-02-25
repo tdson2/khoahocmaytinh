@@ -1,10 +1,3 @@
-<div align="center">
-
-# 📚 Thuật toán & Khoa học Máy tính
-
-</div>
-
----
 
 ## 📖 Giới thiệu
 
