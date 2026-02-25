@@ -10,8 +10,8 @@
 
 Kho lưu trữ gồm:
 
-- **Thuật toán** — cơ bản (tìm kiếm, sắp xếp, đồ thị, DP, BST) và nâng cao (đồ thị nâng cao, chuỗi, cấu trúc dữ liệu, DP nâng cao)
 - **Toán học ứng dụng** — xác suất thống kê, đạo hàm & giải tích, **chuỗi số** (cho Data Science & AI)
+- **Thuật toán** — cơ bản (tìm kiếm, sắp xếp, đồ thị, DP, BST) và nâng cao (đồ thị nâng cao, chuỗi, cấu trúc dữ liệu, DP nâng cao)
 - **Học máy (nền tảng)** — tổng quan ML, Deep Learning cơ bản, Loss, Optimizer, CV / Audio / NLP
 - **Deep Learning** — Transformer, OCR, Speech-to-Text, Text-to-Speech, RAG & Agents
 
@@ -23,11 +23,23 @@ Mỗi tài liệu có: ý tưởng, giải thích, ví dụ, công thức/mã gi
 
 | Chuyên mục                                                      | Nội dung                                                                        |
 | ----------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| [📐 Thuật toán](#-thuật-toán)                                    | Cơ bản (1–6) · Nâng cao: Đồ thị (7–12), Chuỗi & CTDL (13–17), DP (18) |
 | [📊 Toán học ứng dụng](#-toán-học-ứng-dụng-data-science--ai) | Xác suất thống kê · Đạo hàm & Giải tích ·**Chuỗi số**         |
+| [📐 Thuật toán](#-thuật-toán)                                    | Cơ bản (1–6) · Nâng cao: Đồ thị (7–12), Chuỗi & CTDL (13–17), DP (18) |
 | [⚙️ Học máy (nền tảng)](#️-học-máy-nền-tảng--công-cụ)   | Tổng quan ML · DL · Attention · Loss · Optimizer · CV · Audio · NLP      |
 | [🧠 Deep Learning](#-deep-learning-mô-hình--ứng-dụng)            | Transformer · OCR · STT · TTS · RAG & Agents                                 |
 | [📁 Cấu trúc thư mục](#-cấu-trúc-thư-mục)                    | Sơ đồ thư mục dự án                                                       |
+
+---
+
+## 📊 Toán học ứng dụng (Data Science & AI)
+
+Toán nền tảng cho Data Science và AI: xác suất thống kê, đạo hàm & giải tích (gradient, backprop), chuỗi số (hội tụ, cấp số nhân, Taylor).
+
+| # | Chủ đề                  | Nội dung chính                                                           | Tài liệu                                                            |
+| -: | -------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 1 | Xác suất và Thống kê  | Biến ngẫu nhiên, phân phối, Bayes, MLE, kiểm định, A/B test        | [01-probability-statistics.md](math-for-ds/01-probability-statistics.md) |
+| 2 | Đạo hàm và Giải tích | Gradient, chain rule, backprop, matrix calculus, loss & activation         | [02-derivatives-calculus.md](math-for-ds/02-derivatives-calculus.md)     |
+| 3 | Chuỗi số                 | Dãy số, chuỗi số, hội tụ/phân kỳ, cấp số nhân, p-chuỗi, Taylor | [03-sequences-series.md](math-for-ds/03-sequences-series.md)             |
 
 ---
 
@@ -72,18 +84,6 @@ Mỗi tài liệu có: ý tưởng, giải thích, ví dụ, công thức/mã gi
 |  # | Thuật toán | Mô tả                              | Tài liệu                                     |
 | -: | ------------ | ------------------------------------ | ---------------------------------------------- |
 | 18 | Advanced DP  | Bitmask DP (TSP), LIS, LCS, Digit DP | [18-advanced-dp.md](algorithms/18-advanced-dp.md) |
-
----
-
-## 📊 Toán học ứng dụng (Data Science & AI)
-
-Toán nền tảng cho Data Science và AI: xác suất thống kê, đạo hàm & giải tích (gradient, backprop), chuỗi số (hội tụ, cấp số nhân, Taylor).
-
-| # | Chủ đề                  | Nội dung chính                                                           | Tài liệu                                                            |
-| -: | -------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| 1 | Xác suất và Thống kê  | Biến ngẫu nhiên, phân phối, Bayes, MLE, kiểm định, A/B test        | [01-probability-statistics.md](math-for-ds/01-probability-statistics.md) |
-| 2 | Đạo hàm và Giải tích | Gradient, chain rule, backprop, matrix calculus, loss & activation         | [02-derivatives-calculus.md](math-for-ds/02-derivatives-calculus.md)     |
-| 3 | Chuỗi số                 | Dãy số, chuỗi số, hội tụ/phân kỳ, cấp số nhân, p-chuỗi, Taylor | [03-sequences-series.md](math-for-ds/03-sequences-series.md)             |
 
 ---
 
