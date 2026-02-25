@@ -26,7 +26,7 @@
 - **Bộ lọc (kernel)** kích thước K×K (hoặc K_h×K_w) trượt trên ảnh; tại mỗi vị trí tính **tích chập** (tổng có trọng số) → map đặc trưng (feature map).
 - **Stride**: Bước nhảy khi trượt (1 hoặc 2 để giảm kích thước).
 - **Padding**: Thêm viền 0 (hoặc reflect) để giữ kích thước hoặc kiểm soát output size.
-- **Công thức output**: \(H_{out} = \lfloor (H + 2P - K)/S \rfloor + 1\) (tương tự cho W).
+- **Công thức output**: $H_{out} = \lfloor (H + 2P - K)/S \rfloor + 1$ (tương tự cho W).
 
 ### 7.3.2. Các lớp cơ bản trong CNN
 
@@ -48,7 +48,7 @@
 | **LeNet** | Conv sâu đầu tiên (chữ viết tay). | Phân loại chữ số. |
 | **AlexNet** | Nhiều conv + dropout, ReLU; ảnh ImageNet. | Phân loại ảnh. |
 | **VGG** | Chỉ 3×3 conv, stack sâu (VGG-16, VGG-19). | Backbone đặc trưng. |
-| **ResNet** | **Skip connection** (residual): \(y = F(x) + x\); train được mạng rất sâu. | Backbone phổ biến. |
+| **ResNet** | **Skip connection** (residual): $y = F(x) + x$; train được mạng rất sâu. | Backbone phổ biến. |
 | **Inception** | Nhiều nhánh (1×1, 3×3, 5×5, pool) trong một block, concat. | Giảm tham số, tăng width. |
 | **EfficientNet** | Scale đồng thời depth/width/resolution theo compound scaling. | Cân bằng accuracy/efficiency. |
 | **ConvNeXt** | CNN “hiện đại hóa” (kernel 7×7, Layer Norm, GELU) gần transformer. | Backbone ảnh. |
@@ -64,7 +64,7 @@ Mục đích: Tăng đa dạng dữ liệu, giảm overfitting, cải thiện kh
 | **Geometric** | Xoay (rotate), dịch (translate), lật ngang/dọc (flip), scale (zoom in/out), cắt (crop). |
 | **Color** | Thay đổi độ sáng/độ tương phản, saturation; thêm nhiễu Gaussian; đổi kênh. |
 | **Cutout / Random Erasing** | Xóa ngẫu nhiên vùng vuông trên ảnh. |
-| **Mixup** | \(\tilde{x} = \lambda x_1 + (1-\lambda)x_2\), \(\tilde{y} = \lambda y_1 + (1-\lambda)y_2\). |
+| **Mixup** | $\tilde{x} = \lambda x_1 + (1-\lambda)x_2$, $\tilde{y} = \lambda y_1 + (1-\lambda)y_2$. |
 | **CutMix** | Dán vùng cắt từ ảnh khác lên ảnh gốc; nhãn tỉ lệ theo diện tích. |
 | **AutoAugment / RandAugment** | Tìm hoặc dùng tập chính sách augmentation tự động. |
 

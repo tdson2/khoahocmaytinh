@@ -28,7 +28,7 @@ $$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^\top}{\sqrt{d_k}}\rig
 ### Multi-Head Attention
 
 - Nhiều head song song, mỗi head chiều nhỏ hơn; concat rồi chiếu ra:  
-  \(\text{MultiHead}(Q,K,V) = \text{Concat}(\text{head}_1,\ldots,\text{head}_h) W^O\).
+  $\text{MultiHead}(Q,K,V) = \text{Concat}(\text{head}_1,\ldots,\text{head}_h) W^O$.
 - Cho phép học nhiều kiểu quan hệ (cú pháp, tham chiếu, ngữ nghĩa) cùng lúc.
 
 ---

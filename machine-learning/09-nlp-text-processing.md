@@ -28,7 +28,7 @@
 
 ### 9.2.3. Embedding (vector hóa từ/token)
 
-- **Embedding layer**: Mỗi token ID → vector \(d\)-chiều (tham số học được). Shape đầu vào (batch, seq_len) → (batch, seq_len, d).
+- **Embedding layer**: Mỗi token ID → vector $d$-chiều (tham số học được). Shape đầu vào (batch, seq_len) → (batch, seq_len, d).
 - **Pre-trained embedding**: Word2Vec, GloVe (từ → vector cố định); hoặc dùng **contextual embedding** từ BERT/GPT (vector phụ thuộc ngữ cảnh).
 - **Positional encoding**: Transformer cần thông tin vị trí (sinusoidal hoặc learned); thường cộng vào embedding sau khi nhúng token.
 
@@ -51,7 +51,7 @@ Trong NLP hiện đại, **Transformer** (BERT, GPT, T5, v.v.) là nền tảng 
 ### 9.4.1. Mô hình ngôn ngữ (Language Model – LM)
 
 - **Mục tiêu**: Dự đoán token tiếp theo (hoặc token bị che) từ ngữ cảnh.
-- **Causal LM (GPT-style)**: \(P(x_t \mid x_1, \ldots, x_{t-1})\); dùng mask causal (chỉ nhìn trái). → Sinh văn bản, completion.
+- **Causal LM (GPT-style)**: $P(x_t \mid x_1, \ldots, x_{t-1})$; dùng mask causal (chỉ nhìn trái). → Sinh văn bản, completion.
 - **Masked LM (BERT-style)**: Che một phần token (ví dụ 15%), dự đoán token bị che từ toàn bộ câu. → Biểu diễn câu/đoạn, phân loại, NER, QA.
 
 ### 9.4.2. Các kiến trúc pre-train phổ biến

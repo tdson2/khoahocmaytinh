@@ -21,15 +21,15 @@
 
 ## 5.3. Công thức cơ bản (Response-based)
 
-- **Soft labels** từ teacher: \(p_i^T = \text{softmax}(z^T / T)_i\) với \(z^T\) = logits teacher.
-- **Soft predictions** từ student: \(q_i^T = \text{softmax}(z^S / T)_i\).
+- **Soft labels** từ teacher: $p_i^T = \text{softmax}(z^T / T)_i$ với $z^T$ = logits teacher.
+- **Soft predictions** từ student: $q_i^T = \text{softmax}(z^S / T)_i$.
 - **Loss distillation** (KL divergence):
   $$\mathcal{L}_{\text{distill}} = T^2 \cdot D_{KL}(p^T \| q^T)$$
-  (nhân \(T^2\) để scale gradient khi T lớn.)
-- **Loss với nhãn thật** (hard label): Cross-entropy giữa student và one-hot \(y\).
+  (nhân $T^2$ để scale gradient khi T lớn.)
+- **Loss với nhãn thật** (hard label): Cross-entropy giữa student và one-hot $y$.
 - **Tổng loss**:
   $$\mathcal{L} = \alpha \mathcal{L}_{\text{CE}}(y, q^S) + (1-\alpha) T^2 D_{KL}(p^T \| q^T)$$
-  với \(q^S = \text{softmax}(z^S)\) (temperature 1). Thường \(\alpha \in [0.3, 0.5]\).
+  với $q^S = \text{softmax}(z^S)$ (temperature 1). Thường $\alpha \in [0.3, 0.5]$.
 
 ---
 

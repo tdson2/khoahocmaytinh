@@ -10,23 +10,23 @@
 
 ### 8.2.1. Waveform (dạng sóng)
 
-- **Đầu vào**: Mảng 1D \(x[n]\), \(n = 0, \ldots, N-1\).
-- **Sampling rate** \(f_s\) (Hz): Số mẫu mỗi giây. Định lý Nyquist: cần \(f_s \ge 2 f_{max}\) để không mất thông tin (với \(f_{max}\) là tần số cao nhất).
+- **Đầu vào**: Mảng 1D $x[n]$, $n = 0, \ldots, N-1$.
+- **Sampling rate** $f_s$ (Hz): Số mẫu mỗi giây. Định lý Nyquist: cần $f_s \ge 2 f_{max}$ để không mất thông tin (với $f_{max}$ là tần số cao nhất).
 - **Độ sâu**: 16 bit (âm thanh thường), float [-1, 1] sau chuẩn hóa.
 - **Ưu**: Đầy đủ thông tin. **Nhược**: Dài, khó mô hình trực tiếp (gần đây có mô hình waveform như WaveNet, GAN-based).
 
 ### 8.2.2. Spectrogram (phổ thời gian)
 
 - **Short-Time Fourier Transform (STFT)**: Chia waveform thành các **frame** (cửa sổ, ví dụ 25 ms), áp dụng **FFT** trên từng frame → biên độ/pha theo tần số và thời gian.
-- **Spectrogram**: \(|STFT(t,f)|^2\) hoặc \(\log(1 + |STFT|^2)\); trục ngang: thời gian, trục dọc: tần số.
+- **Spectrogram**: $|STFT(t,f)|^2$ hoặc $\log(1 + |STFT|^2)$; trục ngang: thời gian, trục dọc: tần số.
 - **Cửa sổ**: Hamming, Hanning. **Hop length**: Khoảng cách giữa hai frame (overlap).
 - **Ưu**: Thể hiện nội dung tần số theo thời gian; nhiều mô hình dùng spectrogram làm đầu vào.
 
 ### 8.2.3. Mel-spectrogram
 
 - **Thang Mel**: Mô phỏng cảm nhận tần số của tai người: tần số thấp phân giải tốt hơn tần số cao.
-- **Mel filter bank**: Nhóm các bin tần số tuyến tính thành **mel band** (số band, ví dụ 80). Công thức mel: \(m = 2595 \log_{10}(1 + f/700)\).
-- **Mel-spectrogram**: Áp dụng mel filter bank lên power spectrogram → (thời gian × mel bins). Chuẩn hóa log thường dùng: \(\log(1 + \text{mel})\).
+- **Mel filter bank**: Nhóm các bin tần số tuyến tính thành **mel band** (số band, ví dụ 80). Công thức mel: $m = 2595 \log_{10}(1 + f/700)$.
+- **Mel-spectrogram**: Áp dụng mel filter bank lên power spectrogram → (thời gian × mel bins). Chuẩn hóa log thường dùng: $\log(1 + \text{mel})$.
 - **Ứng dụng**: ASR, phân loại âm thanh, TTS (mel làm target hoặc feature).
 
 ### 8.2.4. MFCC (Mel-frequency cepstral coefficients)
