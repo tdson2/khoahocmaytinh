@@ -15,7 +15,7 @@ Mỗi tài liệu có: ý tưởng, giải thích, ví dụ, công thức/mã gi
 
 | Chuyên mục                                                      | Nội dung                                                                        |
 | ----------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| [📚 Toán học ứng dụng](#-toán-học-ứng-dụng-data-science--ai) | Xác suất thống kê · Đạo hàm & Giải tích · **Chuỗi số**         |
+| [📚 Toán học ứng dụng](#-toán-học-ứng-dụng-data-science--ai) | Xác suất thống kê · Đạo hàm & Giải tích ·**Chuỗi số**         |
 | [🔐 Thuật toán](#-thuật-toán)                                    | Cơ bản (1–6) · Nâng cao: Đồ thị (7–12), Chuỗi & CTDL (13–17), DP (18) |
 | [⚙️ Học máy (nền tảng)](#️-học-máy-nền-tảng--công-cụ)   | Tổng quan ML · DL · Attention · Loss · Optimizer · CV · Audio · NLP      |
 | [🤖 Deep Learning](#-deep-learning-mô-hình--ứng-dụng)            | Transformer · OCR · STT · TTS · RAG & Agents                                 |
@@ -115,14 +115,3 @@ Transformer, mô hình đặc thù (OCR, STT, TTS) và ứng dụng (RAG, Agents
 | 5 | RAG & Agents          | Retrieve + generate, tool use, ReAct, chatbot tài liệu               | [05-applications-rag-agents.md](deep-learning/05-applications-rag-agents.md) |
 
 ---
-
-## 📁 Cấu trúc thư mục
-
-```
-khoahocmaytinh/
-├── README.md
-├── algorithms/          # Thuật toán (1–18)
-├── math-for-ds/          # Toán cho Data Science & AI
-├── machine-learning/     # Học máy nền tảng & xử lý tín hiệu
-└── deep-learning/        # Transformer, OCR, STT, TTS, RAG & Agents
-```
