@@ -4,6 +4,8 @@
 
 **Quick Sort** là thuật toán sắp xếp dựa trên **chia để trị**: chọn một phần tử làm **pivot**, phân hoạch mảng thành hai phần (nhỏ hơn pivot và lớn hơn pivot), sau đó sắp xếp đệ quy từng phần.
 
+**Ứng dụng thực tế:** Sắp xếp danh sách sản phẩm theo giá, ngày, tên; chuẩn bị dữ liệu trước khi dùng tìm kiếm nhị phân hoặc merge; sort trong thư viện (ví dụ Java, C++).
+
 | Thuộc tính | Giá trị |
 |------------|--------|
 | **Độ phức tạp thời gian (TB)** | O(n log n) |

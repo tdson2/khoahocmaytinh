@@ -4,6 +4,8 @@
 
 **Knowledge Distillation** là kỹ thuật huấn luyện một mô hình **học trò (student)** nhỏ, nhanh sao cho bắt chước hành vi của mô hình **thầy (teacher)** lớn, mạnh. Mục tiêu: **nén** tri thức từ teacher vào student mà vẫn giữ được phần lớn hiệu năng, phục vụ triển khai trên thiết bị có tài nguyên hạn chế.
 
+**Ứng dụng thực tế:** Deploy mô hình lớn (BERT, GPT) lên điện thoại/edge; giảm latency và bộ nhớ; distill từ ensemble sang 1 mô hình; tinyBERT, DistilBERT, MobileNet.
+
 | Thành phần | Vai trò |
 |------------|--------|
 | **Teacher** | Mô hình đã train (cố định hoặc freeze), cho logits/features |

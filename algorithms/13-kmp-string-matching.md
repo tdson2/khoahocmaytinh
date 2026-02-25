@@ -4,6 +4,8 @@
 
 **KMP** là thuật toán tìm **tất cả vị trí xuất hiện** của chuỗi con (pattern) P trong chuỗi văn bản T trong thời gian **O(|T| + |P|)** nhờ bảng **hàm failure / prefix** (pi), tránh quay lui không cần thiết.
 
+**Ứng dụng thực tế:** Tìm kiếm chuỗi con trong văn bản (Ctrl+F nâng cao); so khớp mẫu DNA; tìm từ khóa trong log/editor; thư viện string search.
+
 | Thuộc tính | Giá trị |
 |------------|--------|
 | **Thời gian** | O(n + m) với n = |T|, m = |P| |

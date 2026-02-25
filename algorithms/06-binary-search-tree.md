@@ -4,6 +4,8 @@
 
 **Cây nhị phân tìm kiếm (BST)** là cây nhị phân mà với mỗi nút:
 
+**Ứng dụng thực tế:** Index trong database (tìm, thêm, xóa theo khóa nhanh); từ điển trong bộ nhớ; cây tìm kiếm trong game (object theo vùng); cơ sở cho cây cân bằng (AVL, Red-Black) trong thư viện.
+
 - Mọi khóa ở **cây con trái** đều **nhỏ hơn** khóa tại nút đó.
 - Mọi khóa ở **cây con phải** đều **lớn hơn** khóa tại nút đó.
 

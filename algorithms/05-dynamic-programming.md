@@ -4,6 +4,8 @@
 
 **Quy hoạch động** là kỹ thuật giải bài toán bằng cách **chia nhỏ** thành các bài toán con, **lưu kết quả** (memoization hoặc bảng) để tránh tính lại, thường dùng khi bài toán có **cấu trúc con tối ưu** và **các bài toán con trùng lặp**.
 
+**Ứng dụng thực tế:** **Knapsack** — chọn gói hàng tối ưu (trọng lượng/giá); **Min path** — tổng chi phí nhỏ nhất qua nhiều bước; **Fibonacci** — cơ sở memoization; **LCS/LIS** — so sánh chuỗi, diff văn bản.
+
 | Thuộc tính | Mô tả |
 |------------|--------|
 | **Ý tưởng chính** | Lưu kết quả bài toán con để tái sử dụng |

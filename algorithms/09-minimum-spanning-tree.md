@@ -4,6 +4,8 @@
 
 **Cây bao trùm nhỏ nhất (MST)** của đồ thị vô hướng có trọng số là một cây con **nối mọi đỉnh** với **tổng trọng số cạnh nhỏ nhất**. Hai thuật toán phổ biến: **Kruskal** (sắp xếp cạnh + DSU) và **Prim** (giống Dijkstra, chọn đỉnh gần nhất).
 
+**Ứng dụng thực tế:** Thiết kế mạng (điện, cáp, đường ống) với chi phí nối nhỏ nhất; nhóm cụm (clustering) theo khoảng cách; kết nối N điểm với chi phí tối thiểu.
+
 ### Hình minh họa: Đồ thị và MST
 
 **Đồ thị có trọng số** (số trên cạnh = trọng số):

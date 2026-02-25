@@ -4,6 +4,8 @@
 
 Phần này bổ sung các kỹ thuật **quy hoạch động nâng cao**: DP bitmask (trạng thái dạng tập hợp), dãy con tăng dài nhất (LIS), dãy con chung dài nhất (LCS), và một số mẫu thường gặp trong thi đấu/lập trình.
 
+**Ứng dụng thực tế:** **TSP (Bitmask DP)** — lộ trình giao hàng qua N điểm mỗi điểm đúng 1 lần; **LIS/LCS** — so sánh chuỗi (diff văn bản, genome); **Digit DP** — đếm số trong khoảng thỏa điều kiện.
+
 | Kỹ thuật | Ứng dụng điển hình | Độ phức tạp |
 |----------|--------------------|-------------|
 | Bitmask DP | TSP, gán công việc, tập con | O(2^n × poly(n)) |

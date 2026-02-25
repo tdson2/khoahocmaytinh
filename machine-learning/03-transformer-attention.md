@@ -4,6 +4,8 @@
 
 **Transformer** là kiến trúc dựa hoàn toàn trên **cơ chế attention** (không dùng recurrence hay convolution theo chuỗi). Nền tảng cho BERT, GPT, ViT và nhiều mô hình đa modal. Input là tập **token** (từ, patch ảnh); mỗi token tương tác với mọi token khác qua **self-attention**.
 
+**Ứng dụng thực tế:** BERT, GPT (NLP); ViT (ảnh); mô hình đa modal (CLIP, Flamingo); dịch máy; tóm tắt, hỏi đáp, sinh văn bản.
+
 | Thành phần chính | Chức năng |
 |------------------|-----------|
 | **Self-Attention** | Mỗi token “hỏi” tất cả token khác để tổng hợp ngữ cảnh |

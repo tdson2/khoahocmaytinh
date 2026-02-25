@@ -2,6 +2,8 @@
 
 **OCR** chuyển ảnh chứa chữ (tài liệu, biển báo, ảnh chụp màn hình) thành **văn bản có thể chỉnh sửa**. Pipeline điển hình: **phát hiện vùng chữ (text detection)** → **nhận dạng chữ (text recognition)**; có thể thêm **chỉnh góc/skew**, **tách dòng/chữ**.
 
+**Ứng dụng thực tế:** Số hóa tài liệu, form, hóa đơn; đọc biển số xe; trích văn bản từ ảnh (camera, scan); trợ lý đọc cho người khiếm thị.
+
 ---
 
 ## 2.1. Tổng quan pipeline

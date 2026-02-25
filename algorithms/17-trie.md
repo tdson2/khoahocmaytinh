@@ -4,6 +4,8 @@
 
 **Trie** (cây tiền tố / prefix tree) là cấu trúc dữ liệu lưu tập chuỗi: mỗi cạnh tương ứng một ký tự, mỗi đường từ gốc đến nút đánh dấu **kết thúc** tương ứng một chuỗi trong tập. Dùng cho từ điển, autocomplete, tìm tiền tố chung.
 
+**Ứng dụng thực tế:** Gợi ý từ khi gõ (autocomplete); kiểm tra chính tả; từ điển tiền tố; đếm số từ có tiền tố cho trước; lưu từ khóa trong search.
+
 | Thao tác | Thời gian | Ghi chú |
 |----------|-----------|--------|
 | Chèn chuỗi độ dài m | O(m) | |

@@ -4,6 +4,8 @@
 
 **Cây phân đoạn (Segment Tree)** là cấu trúc dữ liệu dùng để **truy vấn trên đoạn** (range query) và **cập nhật điểm** (point update) trong thời gian **O(log n)**. Ví dụ: tổng đoạn, min/max đoạn, GCD đoạn.
 
+**Ứng dụng thực tế:** Truy vấn tổng/min/max trên đoạn [l, r] (thống kê, game); cập nhật 1 phần tử nhanh; range minimum query (RMQ); đếm nghịch thế với cập nhật.
+
 | Thao tác | Thời gian | Ghi chú |
 |----------|-----------|--------|
 | Xây cây | O(n) | Mảng gốc n phần tử |

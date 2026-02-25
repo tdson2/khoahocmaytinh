@@ -2,6 +2,8 @@
 
 **Speech-to-Text (STT)** hay **ASR (Automatic Speech Recognition)** chuyển **âm thanh giọng nói** thành **văn bản**. Ứng dụng: phụ đề trực tiếp, trợ lý ảo, ghi chú từ giọng nói, accessibility, phân tích cuộc gọi.
 
+**Ứng dụng thực tế:** Phụ đề livestream, họp; trợ lý ảo (Alexa, Siri, Google); ghi chú từ giọng nói; chuyển cuộc gọi thành văn bản; hỗ trợ người khiếm thính.
+
 ---
 
 ## 3.1. Tổng quan pipeline

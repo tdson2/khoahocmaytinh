@@ -4,6 +4,8 @@
 
 **Ảnh** là tín hiệu **phi cấu trúc** dạng lưới 2D (hoặc 3D với kênh màu). Xử lý ảnh bằng học máy gồm: biểu diễn ảnh, tiền xử lý, tăng cường dữ liệu, và các nhiệm vụ như **phân loại**, **phát hiện đối tượng**, **phân đoạn** (semantic/instance). Kiến trúc chủ đạo: **CNN** và **Vision Transformer (ViT)**.
 
+**Ứng dụng thực tế:** Phân loại ảnh (ImageNet); nhận diện khuôn mặt; xe tự lái (phát hiện người, biển báo); phân đoạn ảnh y khoa; OCR; an ninh, camera thông minh.
+
 ---
 
 ## 7.2. Biểu diễn ảnh số

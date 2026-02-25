@@ -4,6 +4,8 @@
 
 **Dijkstra** tìm đường đi ngắn nhất từ một **đỉnh nguồn** đến mọi đỉnh còn lại trên **đồ thị có trọng số không âm** (cạnh ≥ 0).
 
+**Ứng dụng thực tế:** **Google Maps / Waze** — đường đi ngắn nhất theo thời gian hoặc km; định tuyến trong mạng (router chọn đường ít trễ nhất); tối ưu lộ trình giao hàng.
+
 | Thuộc tính | Giá trị |
 |------------|--------|
 | **Độ phức tạp (danh sách kề + heap)** | O((V + E) log V) |

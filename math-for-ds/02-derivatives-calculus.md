@@ -2,6 +2,8 @@
 
 Đạo hàm và giải tích là **cốt lõi** của tối ưu trong ML/AI: gradient descent, backpropagation, và mọi optimizer đều dựa trên việc tính gradient (đạo hàm) của hàm loss theo tham số. Chuyên mục này tập trung **ứng dụng cho Data Science và AI**.
 
+**Ứng dụng thực tế:** Gradient descent / SGD để tối ưu loss; backpropagation (chain rule) để huấn luyện mạng neural; learning rate, momentum; tìm điểm cực tiểu trong tối ưu lồi.
+
 ---
 
 ## 2.1. Đạo hàm một biến

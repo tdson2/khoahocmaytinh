@@ -4,6 +4,8 @@
 
 **Văn bản** là chuỗi **ký tự / từ** không có cấu trúc lưới như ảnh hay tín hiệu liên tục như âm thanh; thông tin nằm ở **thứ tự** và **ngữ cảnh**. Xử lý ngôn ngữ tự nhiên (NLP) gồm: biểu diễn (tokenization, embedding), mô hình chuỗi (RNN, Transformer), và các nhiệm vụ **phân loại**, **gắn nhãn chuỗi (NER, POS)**, **dịch máy**, **hỏi đáp**, **tóm tắt**, **sinh văn bản**.
 
+**Ứng dụng thực tế:** Tìm kiếm, gợi ý; dịch máy; chatbot, hỏi đáp; tóm tắt văn bản; NER (trích tên, địa chỉ); sentiment; sinh văn bản (GPT).
+
 ---
 
 ## 9.2. Biểu diễn văn bản

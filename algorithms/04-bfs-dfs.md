@@ -4,6 +4,8 @@
 
 **BFS (Breadth-First Search)** và **DFS (Depth-First Search)** là hai cách duyệt cơ bản trên đồ thị (vô hướng hoặc có hướng). BFS dùng **hàng đợi**, DFS dùng **ngăn xếp** (hoặc đệ quy).
 
+**Ứng dụng thực tế:** **BFS** — tìm đường ngắn nhất theo số cạnh (mê cung, mạng xã hội "bạn của bạn"); **DFS** — duyệt cây thư mục, crawl web, kiểm tra chu trình trong dependency (build phần mềm), topological sort.
+
 | Thuật toán | Cấu trúc dữ liệu | Thời gian | Không gian |
 |------------|------------------|-----------|------------|
 | BFS | Hàng đợi (Queue) | O(V + E) | O(V) |

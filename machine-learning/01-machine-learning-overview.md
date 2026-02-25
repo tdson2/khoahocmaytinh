@@ -4,6 +4,8 @@
 
 **Học máy (Machine Learning)** là lĩnh vực nghiên cứu các thuật toán cho phép máy tính **học từ dữ liệu** (kinh nghiệm) để cải thiện hiệu năng trên một nhiệm vụ mà không cần lập trình tường minh từng bước.
 
+**Ứng dụng thực tế:** Phân loại ảnh, nhận diện giọng nói; dự đoán giá nhà, doanh số; gợi ý sản phẩm; phát hiện bất thường; chatbot, dịch máy, xe tự lái.
+
 ---
 
 ## 1.2. Phân loại chính

@@ -2,6 +2,8 @@
 
 Các ứng dụng xây trên **LLM** và **mô hình đặc thù** (OCR, STT, TTS): **RAG** (Retrieval-Augmented Generation), **Agents** (tool use, reasoning), **chatbot**, **hỏi đáp trên tài liệu**, và pipeline đa bước.
 
+**Ứng dụng thực tế:** Hỏi đáp trên tài liệu nội bộ (RAG); chatbot dùng tool (tìm kiếm, API); agent tự lên kế hoạch và gọi tool; tổng hợp pipeline OCR + STT + LLM cho tài liệu đa phương tiện.
+
 ---
 
 ## 5.1. RAG – Retrieval-Augmented Generation

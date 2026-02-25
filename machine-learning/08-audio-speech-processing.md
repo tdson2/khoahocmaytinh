@@ -4,6 +4,8 @@
 
 **Âm thanh** là tín hiệu **một chiều theo thời gian** (waveform): áp suất không khí được lấy mẫu tại tần số lấy mẫu (sampling rate, ví dụ 16 kHz, 44.1 kHz). Xử lý bằng học máy gồm: biểu diễn (waveform, phổ, mel-spectrogram), tiền xử lý, và các nhiệm vụ **nhận dạng giọng nói (ASR)**, **phân loại âm thanh**, **tổng hợp giọng nói (TTS)**, **nhận dạng loa (speaker)**.
 
+**Ứng dụng thực tế:** Trợ lý ảo (Alexa, Siri); chuyển giọng nói thành văn bản; TTS cho sách nói, video; nhận diện nhạc, âm thanh môi trường; gọi điện thoại tự động.
+
 ---
 
 ## 8.2. Biểu diễn tín hiệu âm thanh

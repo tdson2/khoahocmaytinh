@@ -4,6 +4,8 @@
 
 Mục tiêu: Cập nhật tham số θ để **giảm loss** $L(\theta)$. Công thức chung: $\theta_{t+1} = \theta_t - \eta \cdot g_t$ với $g_t$ hướng cập nhật (gradient hoặc biến thể).
 
+**Ứng dụng thực tế:** SGD/Adam cho mọi mô hình neural; AdamW cho Transformer; warmup + decay cho train ổn định; Dropout, weight decay để tránh overfitting.
+
 | Optimizer | Cập nhật (ý tưởng) | Ghi chú |
 |-----------|---------------------|---------|
 | **SGD** | $g_t = \nabla L$ | Đơn giản; dao động khi learning rate lớn |

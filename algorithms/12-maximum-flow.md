@@ -4,6 +4,8 @@
 
 **Bài toán luồng cực đại**: Cho mạng (đồ thị có hướng) với **khả năng thông qua** (capacity) trên mỗi cạnh, một **nguồn (source)** và một **đích (sink)**. Tìm **luồng** (flow) lớn nhất có thể từ nguồn đến đích, sao cho trên mỗi cạnh luồng không vượt quá khả năng thông qua và **bảo toàn** tại mỗi đỉnh trung gian (tổng luồng vào = tổng luồng ra).
 
+**Ứng dụng thực tế:** Băng thông mạng (tối đa hóa lưu lượng); vận chuyển hàng (đường sắt, đường ống); ghép cặp (bipartite matching); cắt nhỏ nhất (min-cut) trong phân tách ảnh.
+
 | Thuật toán | Thời gian | Ghi chú |
 |------------|-----------|--------|
 | Ford-Fulkerson (DFS) | O(E × |f*|) | |f*| = giá trị luồng cực đại |

@@ -4,6 +4,8 @@
 
 **Disjoint Set Union (DSU)** hay **Union-Find** là cấu trúc dữ liệu quản lý một phân hoạch của tập hợp: **hợp nhất** hai tập (Union) và **kiểm tra** hai phần tử có cùng tập hay không (Find). Dùng nhiều trong Kruskal, kiểm tra chu trình, thành phần liên thông.
 
+**Ứng dụng thực tế:** Thuật toán Kruskal (MST); kiểm tra chu trình khi thêm cạnh; thành phần liên thông động; gom nhóm pixel (ảnh); game (cùng phe, kết nối).
+
 | Thao tác | Gần O(1) với nén đường + gộp theo rank |
 |----------|----------------------------------------|
 | Find(x) | Trả về đại diện (root) của tập chứa x |

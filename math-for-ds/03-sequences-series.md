@@ -2,6 +2,8 @@
 
 **Chuỗi số** là tổng vô hạn các số hạng; **dãy số** là danh sách có thứ tự $a_1, a_2, \ldots$. Khái niệm hội tụ, phân kỳ và các chuỗi cơ bản (cấp số nhân, $p$-chuỗi, Taylor) xuất hiện trong giải tích, xác suất và tối ưu (learning rate decay, khai triển hàm loss).
 
+**Ứng dụng thực tế:** Learning rate decay (chuỗi hội tụ); khai triển Taylor cho xấp xỉ hàm; kỳ vọng và moment trong xác suất; phân tích độ phức tạp (Big-O) khi $n \to \infty$.
+
 ---
 
 ## 3.1. Dãy số (Sequence)

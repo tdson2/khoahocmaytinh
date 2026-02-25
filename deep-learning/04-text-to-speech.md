@@ -2,6 +2,8 @@
 
 **Text-to-Speech (TTS)** chuyển **văn bản** thành **âm thanh giọng nói** (waveform). Ứng dụng: trợ lý ảo, sách nói, phụ đề có đọc, accessibility, podcast/nội dung đa phương tiện.
 
+**Ứng dụng thực tế:** Trợ lý ảo đọc đáp án; sách nói, podcast tổng hợp; phụ đề có đọc cho người khiếm thị; tin nhắn thoại; video/nội dung đa phương tiện.
+
 ---
 
 ## 4.1. Tổng quan pipeline

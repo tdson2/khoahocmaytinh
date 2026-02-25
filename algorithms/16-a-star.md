@@ -4,6 +4,8 @@
 
 **A*** là thuật toán **tìm đường** từ điểm bắt đầu đến điểm đích trên đồ thị (thường là lưới hoặc graph có trọng số). A* dùng **hàm đánh giá** f(n) = g(n) + h(n): g(n) = chi phí từ start đến n, h(n) = heuristic ước lượng chi phí từ n đến goal. Thuật toán **tham lam** mở rộng đỉnh có f(n) nhỏ nhất, đảm bảo tối ưu nếu heuristic **chấp nhận được** (admissible) và **nhất quán** (consistent).
 
+**Ứng dụng thực tế:** Game (NPC tìm đường tránh chướng ngại); robot di chuyển; chỉ đường bản đồ; puzzle (N-puzzle) khi có heuristic tốt.
+
 | Thuộc tính | Giá trị |
 |------------|--------|
 | **Thời gian** | Phụ thuộc heuristic; tốt nhất O(b^d) với b nhánh, d độ sâu |

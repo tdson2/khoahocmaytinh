@@ -2,6 +2,8 @@
 
 **Transformer** là kiến trúc nền tảng của Deep Learning hiện đại: NLP (BERT, GPT, T5, LLaMA), Vision (ViT), đa modal và nhiều mô hình đặc thù (OCR, ASR, TTS). Chuyên mục này tập trung **các họ mô hình Transformer** và ứng dụng.
 
+**Ứng dụng thực tế:** BERT/GPT/T5 cho văn bản; ViT cho ảnh; mô hình đa modal; OCR, ASR, TTS; chatbot, dịch máy, tóm tắt.
+
 ---
 
 ## 1.1. Tổng quan kiến trúc

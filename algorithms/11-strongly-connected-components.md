@@ -4,6 +4,8 @@
 
 **Thành phần liên thông mạnh (SCC)** của đồ thị có hướng là tập đỉnh lớn nhất sao cho **giữa hai đỉnh bất kỳ trong cùng một SCC đều có đường đi hai chiều**. Hai thuật toán phổ biến: **Kosaraju** và **Tarjan**.
 
+**Ứng dụng thực tế:** Phân tích phụ thuộc (module nào cùng chu trình); rút gọn đồ thị thành DAG theo SCC; phát hiện nhóm tương tác chặt (mạng xã hội, trang web liên kết).
+
 ### Hình minh họa: Đồ thị có hướng và các SCC
 
 **Đồ thị** — trong mỗi SCC, mọi đỉnh đi được đến nhau (hai chiều):

@@ -4,6 +4,8 @@
 
 **Deep Learning** là tập con của học máy dựa trên **mạng neural nhiều lớp (deep neural networks)**. Mô hình học biểu diễn đa tầng từ dữ liệu thô (ảnh, văn bản, âm thanh) nhờ **backpropagation** và **gradient descent**.
 
+**Ứng dụng thực tế:** Nhận dạng ảnh (CNN); dịch máy, BERT/GPT (Transformer); nhận dạng giọng nói; xe tự lái; chẩn đoán ảnh y khoa; recommendation.
+
 | Thành phần | Vai trò |
 |------------|--------|
 | **Layer** | Biến đổi đầu vào (linear + activation) |

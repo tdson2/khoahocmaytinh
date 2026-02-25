@@ -4,6 +4,8 @@
 
 **Tìm kiếm nhị phân** là thuật toán tìm vị trí của một phần tử trong một **mảng đã được sắp xếp** bằng cách liên tục chia đôi khoảng tìm kiếm.
 
+**Ứng dụng thực tế:** Tìm tên trong danh bạ đã sắp theo ABC; tìm giá trong danh sách giá đã sort; game "đoán số trong khoảng 1–100" với gợi ý lớn hơn/nhỏ hơn; tìm kiếm trong index đã sắp.
+
 | Thuộc tính | Giá trị |
 |------------|--------|
 | **Độ phức tạp thời gian** | O(log n) |

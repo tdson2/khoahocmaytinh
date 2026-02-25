@@ -6,6 +6,10 @@
 
 ---
 
+**Ứng dụng thực tế:** MSE/MAE cho hồi quy giá, nhiệt độ; Cross-entropy cho phân loại ảnh, spam; focal loss khi lớp mất cân bằng; contrastive loss cho embedding, retrieval.
+
+---
+
 ## 4.2. Loss cho Hồi quy (Regression)
 
 | Loss | Công thức | Đặc điểm |

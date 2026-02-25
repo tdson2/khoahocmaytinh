@@ -4,6 +4,8 @@
 
 **Floyd-Warshall** tìm **đường đi ngắn nhất giữa mọi cặp đỉnh** trên đồ thị có hướng, có trọng số (cho phép cạnh âm, không cho phép chu trình âm). Thuật toán dùng **quy hoạch động** trên tập đỉnh trung gian.
 
+**Ứng dụng thực tế:** Bảng khoảng cách giữa mọi cặp sân bay/thành phố; tổng hợp đường đi ngắn nhất toàn cục khi không cần cập nhật thường xuyên.
+
 | Thuộc tính | Giá trị |
 |------------|--------|
 | **Độ phức tạp thời gian** | O(V³) |

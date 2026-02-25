@@ -4,6 +4,8 @@
 
 **Bellman-Ford** tìm đường đi ngắn nhất từ một đỉnh nguồn đến mọi đỉnh trên đồ thị **có trọng số bất kỳ** (kể cả âm). Thuật toán còn **phát hiện chu trình âm** (chu trình mà tổng trọng số < 0).
 
+**Ứng dụng thực tế:** Đường đi khi có cạnh "âm" (ví dụ arbitrage tiền tệ: đổi A→B→C→A để lời); phát hiện chu trình âm trong mạng tài chính, ràng buộc.
+
 | Thuộc tính | Giá trị |
 |------------|--------|
 | **Độ phức tạp thời gian** | O(V × E) |

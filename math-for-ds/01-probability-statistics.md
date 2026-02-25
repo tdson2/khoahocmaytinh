@@ -2,6 +2,8 @@
 
 Toán xác suất và thống kê là **nền tảng** của Data Science và AI: từ mô hình hóa bất định, ước lượng tham số, kiểm định giả thuyết, đến Bayesian inference, A/B test và đánh giá mô hình.
 
+**Ứng dụng thực tế:** Bayesian spam filter, chẩn đoán y học (Bayes); A/B test (kiểm định giả thuyết); đánh giá mô hình (precision, recall, ROC); ước lượng bất định trong dự đoán.
+
 ---
 
 ## 1.1. Xác suất cơ bản
