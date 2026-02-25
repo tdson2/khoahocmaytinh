@@ -2,10 +2,6 @@
 
 # 📚 Thuật toán & Khoa học Máy tính
 
-**Tài liệu thuật toán, toán ứng dụng, Học máy và Deep Learning** — ý tưởng, công thức, ví dụ và code mẫu.
-
-[![License](https://img.shields.io/badge/license-Open%20for%20learning-green.svg)](./README.md)
-
 </div>
 
 ---
@@ -127,20 +123,3 @@ Transformer, mô hình đặc thù (OCR, STT, TTS) và ứng dụng (RAG, Agents
 | 5 | RAG & Agents          | Retrieve + generate, tool use, ReAct, chatbot tài liệu               | [05-applications-rag-agents.md](deep-learning/05-applications-rag-agents.md) |
 
 ---
-
-## 📁 Cấu trúc thư mục
-
-<details>
-<summary>Click để mở rộng / thu gọn</summary>
-
-```
-khoahocmaytinh/
-├── README.md
-├── .gitignore
-├── algorithms/          # Thuật toán cơ bản & nâng cao (01–18)
-├── math-for-ds/         # Toán ứng dụng: Xác suất, Đạo hàm, Chuỗi số
-├── deep-learning/      # Transformer, OCR, STT, TTS, RAG & Agents
-└── machine-learning/   # Nền tảng ML: Tổng quan, Loss, Optimizer, CV, Audio, NLP
-```
-
-</details>
