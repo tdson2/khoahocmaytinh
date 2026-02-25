@@ -4,6 +4,22 @@
 
 **Thành phần liên thông mạnh (SCC)** của đồ thị có hướng là tập đỉnh lớn nhất sao cho **giữa hai đỉnh bất kỳ trong cùng một SCC đều có đường đi hai chiều**. Hai thuật toán phổ biến: **Kosaraju** và **Tarjan**.
 
+### Hình minh họa: Đồ thị có hướng và các SCC
+
+**Đồ thị** — trong mỗi SCC, mọi đỉnh đi được đến nhau (hai chiều):
+
+```mermaid
+flowchart LR
+    A((A)) --> B((B))
+    B --> C((C))
+    C --> A
+    C --> D((D))
+    D --> E((E))
+    E --> D
+```
+
+**Các SCC**: {A, B, C} (chu trình 3 đỉnh), {D, E} (chu trình 2 đỉnh). Kosaraju: DFS 1 lấy thứ tự kết thúc → đồ thị chuyển vị → DFS theo thứ tự ngược, mỗi lần DFS = 1 SCC.
+
 | Thuật toán | Thời gian | Không gian | Ý tưởng chính |
 |------------|-----------|------------|----------------|
 | Kosaraju | O(V + E) | O(V) | DFS 2 lần: G, rồi G^T theo thứ tự kết thúc |

@@ -19,6 +19,23 @@
 - **Nhất quán**: h(n) ≤ cost(n, n') + h(n') với mọi cạnh (n → n').  
 Ví dụ trên lưới 4 hướng: **khoảng cách Manhattan**; trên lưới 8 hướng: **khoảng cách Chebyshev** hoặc **đường chéo**.
 
+### Hình minh họa: A* trên lưới
+
+**Lưới** (ô trắng = đi được, ô xám = vật cản). A* ưu tiên ô có f = g + h nhỏ nhất; h = Manhattan distance đến đích.
+
+```mermaid
+flowchart TD
+    subgraph Lưới
+        S["S (start)"]
+        G["G (goal)"]
+        S --> 1
+        1 --> 2
+        2 --> G
+    end
+```
+
+**So sánh**: Dijkstra mở rộng đều mọi hướng; A* nghiêng về phía goal nhờ h(n), nên ít ô mở rộng hơn (đặc biệt khi có ít vật cản).
+
 ---
 
 ## 16.3. Mã giả

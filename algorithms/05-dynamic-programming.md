@@ -19,6 +19,68 @@
 3. **Điều kiện cơ sở**: Giá trị khởi tạo (ví dụ `dp[0]`, `dp[1]`).
 4. **Thứ tự tính**: Tính từ trạng thái nhỏ đến lớn (hoặc ngược lại) để khi tính `dp[i]` thì các `dp[j]` cần thiết đã có.
 
+### Hình minh họa: Phụ thuộc trạng thái DP
+
+**Fibonacci** — `dp[i]` chỉ phụ thuộc `dp[i-1]` và `dp[i-2]`:
+
+```mermaid
+flowchart LR
+    dp0[dp[0]] --> dp2[dp[2]]
+    dp1[dp[1]] --> dp2
+    dp1 --> dp3[dp[3]]
+    dp2 --> dp3
+    dp2 --> dp4[dp[4]]
+    dp3 --> dp4
+```
+
+**Knapsack** — `dp[i][c]` phụ thuộc `dp[i-1][c]` và `dp[i-1][c-w[i]]`:
+
+```mermaid
+flowchart TD
+    subgraph "Hàng i-1"
+        A["dp[i-1][c]"]
+        B["dp[i-1][c-w[i]]"]
+    end
+    subgraph "Hàng i"
+        C["dp[i][c]"]
+    end
+    A --> C
+    B --> C
+```
+
+**Min Path Sum** — lưới 3×3, mỗi ô phụ thuộc ô trên và ô trái:
+
+```mermaid
+flowchart LR
+    subgraph Hàng1
+        A00((0,0))
+        A01((0,1))
+        A02((0,2))
+    end
+    subgraph Hàng2
+        A10((1,0))
+        A11((1,1))
+        A12((1,2))
+    end
+    subgraph Hàng3
+        A20((2,0))
+        A21((2,1))
+        A22((2,2))
+    end
+    A00 --> A01
+    A01 --> A02
+    A00 --> A10
+    A01 --> A11
+    A02 --> A12
+    A10 --> A11
+    A11 --> A12
+    A10 --> A20
+    A11 --> A21
+    A12 --> A22
+    A20 --> A21
+    A21 --> A22
+```
+
 ---
 
 ## 5.3. Ví dụ 1: Dãy Fibonacci

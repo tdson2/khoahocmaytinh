@@ -29,6 +29,31 @@ Mỗi nút gồm:
 - `right`: con phải.
 - (Tùy chọn) `parent` cho một số thao tác.
 
+### Hình minh họa: Cấu trúc BST và đường tìm kiếm
+
+**BST với khóa 50, 30, 70, 20, 40, 60, 80** — mọi nút trái < gốc < phải:
+
+```mermaid
+flowchart TD
+    50((50)) --> 30((30))
+    50 --> 70((70))
+    30 --> 20((20))
+    30 --> 40((40))
+    70 --> 60((60))
+    70 --> 80((80))
+```
+
+**Đường tìm kiếm 40**: bắt đầu từ gốc, đi trái khi 40 < nút, đi phải khi 40 > nút.
+
+```mermaid
+flowchart LR
+    50((50)) -->|"40 < 50"| 30((30))
+    30 -->|"40 > 30"| 40((40))
+    40 -->|"Tìm thấy"| 40
+```
+
+**In-order** (trái → gốc → phải) cho dãy tăng dần: 20, 30, 40, 50, 60, 70, 80.
+
 ---
 
 ## 6.3. Các thao tác cơ bản

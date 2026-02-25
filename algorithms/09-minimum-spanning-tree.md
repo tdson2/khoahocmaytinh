@@ -4,6 +4,30 @@
 
 **Cây bao trùm nhỏ nhất (MST)** của đồ thị vô hướng có trọng số là một cây con **nối mọi đỉnh** với **tổng trọng số cạnh nhỏ nhất**. Hai thuật toán phổ biến: **Kruskal** (sắp xếp cạnh + DSU) và **Prim** (giống Dijkstra, chọn đỉnh gần nhất).
 
+### Hình minh họa: Đồ thị và MST
+
+**Đồ thị có trọng số** (số trên cạnh = trọng số):
+
+```mermaid
+flowchart LR
+    A((A)) ---|1| B((B))
+    B ---|2| C((C))
+    A ---|4| C
+    A ---|3| D((D))
+    C ---|5| D
+```
+
+**MST** (cây bao trùm tổng trọng số nhỏ nhất): chọn cạnh 1, 2, 3 → tổng = 6.
+
+```mermaid
+flowchart LR
+    A((A)) ---|1| B((B))
+    B ---|2| C((C))
+    A ---|3| D((D))
+```
+
+**Kruskal**: sắp cạnh (1, 2, 3, 4, 5), thêm (A-B), (B-C), (A-D); (A-C) và (C-D) bị bỏ vì tạo chu trình.
+
 | Thuật toán | Thời gian | Không gian | Cách tiếp cận |
 |------------|-----------|------------|----------------|
 | Kruskal | O(E log E) | O(V) | Sắp xếp cạnh, thêm cạnh không tạo chu trình |

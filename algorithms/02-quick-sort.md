@@ -20,6 +20,47 @@
 2. **Phân hoạch (partition)**: Đưa tất cả phần tử nhỏ hơn pivot sang trái, lớn hơn sang phải; đặt pivot vào đúng vị trí.
 3. **Đệ quy**: Sắp xếp đoạn trái pivot và đoạn phải pivot.
 
+### Hình minh họa: Partition và cây đệ quy
+
+**Bước partition** — pivot = 70. Mũi tên: các phần tử ≤ pivot dồn sang trái.
+
+```mermaid
+flowchart LR
+    subgraph Trước["Trước partition"]
+        T1[10]
+        T2[80]
+        T3[30]
+        T4[90]
+        T5[40]
+        T6[50]
+        T7[70]
+    end
+    subgraph Sau["Sau partition"]
+        S1[10]
+        S2[30]
+        S3[40]
+        S4[50]
+        S5[70]
+        S6[90]
+        S7[80]
+        S5 -->|pivot| S5
+    end
+```
+
+**Cây đệ quy Quick Sort** — mỗi nút là một lần gọi với đoạn [low, high]; lá là đoạn 1 phần tử (đã sắp).
+
+```mermaid
+flowchart TD
+    A["[10,80,30,90,40,50,70]"] --> B["[10,30,40,50]"]
+    A --> C["[90,80]"]
+    B --> D["[10,30]"]
+    B --> E["[40,50]"]
+    C --> F["[90]"]
+    C --> G["[80]"]
+    D --> H["..."]
+    E --> I["..."]
+```
+
 ---
 
 ## 2.3. Mã giả (Pseudocode)

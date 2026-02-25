@@ -19,6 +19,37 @@ Với **nén đường (path compression)** và **gộp theo rank**, thời gian
 - **Find(x)**: Đi từ x lên root. **Nén đường**: Sau khi tìm được root, gán tất cả nút trên đường từ x lên root trỏ thẳng đến root.
 - **Union(x, y)**: Tìm root của x và root của y; gắn root của tập nhỏ hơn (theo rank hoặc size) làm con của root kia.
 
+### Hình minh họa: Union-Find dạng cây
+
+**Ban đầu**: mỗi phần tử là một tập (root trỏ chính nó).
+
+```mermaid
+flowchart LR
+    0((0))
+    1((1))
+    2((2))
+    3((3))
+```
+
+**Sau Union(0,1), Union(2,3)** — hai cây:
+
+```mermaid
+flowchart TD
+    0((0)) --> 1((1))
+    2((2)) --> 3((3))
+```
+
+**Sau Union(0,2)** — gắn root cây nhỏ hơn vào root cây kia:
+
+```mermaid
+flowchart TD
+    0((0)) --> 1((1))
+    0 --> 2((2))
+    2 --> 3((3))
+```
+
+**Find(3)**: 3 → 2 → 0 (root). Sau **nén đường**, 3 trỏ thẳng tới 0.
+
 ---
 
 ## 15.3. Mã giả

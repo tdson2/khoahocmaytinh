@@ -20,6 +20,34 @@
 3. Lấy đỉnh `u` có khoảng cách nhỏ nhất; với mỗi cạnh `(u, v)` có trọng số `w`, nếu `dist[u] + w < dist[v]` thì cập nhật `dist[v]` và đưa `(dist[v], v)` vào heap.
 4. Lặp đến khi heap rỗng (hoặc đã xử lý đủ đỉnh).
 
+### Hình minh họa: Đồ thị và đường đi ngắn nhất
+
+Đồ thị ví dụ (nguồn = 0). Số trên cạnh là trọng số. Sau Dijkstra: dist = [0, 3, 1, 4].
+
+```mermaid
+flowchart LR
+    subgraph Đồ thị
+        A((0)) -->|4| B((1))
+        A -->|1| C((2))
+        C -->|2| B
+        C -->|5| D((3))
+        B -->|1| D
+    end
+```
+
+**Cây đường đi ngắn nhất** từ 0 (cạnh nét đậm = nằm trên đường ngắn nhất):
+
+```mermaid
+flowchart TD
+    A((0 dist=0)) -->|1| C((2 dist=1))
+    C -->|2| B((1 dist=3))
+    B -->|1| D((3 dist=4))
+    style A fill:#90EE90
+    style D fill:#FFB6C1
+```
+
+**Thứ tự Dijkstra (min-heap):** lấy 0 → cập nhật 1,2 → lấy 2 → cập nhật 1,3 → lấy 1 → cập nhật 3 → lấy 3.
+
 ---
 
 ## 3.3. Mã giả (Pseudocode)

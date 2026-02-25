@@ -25,6 +25,20 @@
 - **Min**: `tree[i] = min(tree[2*i], tree[2*i+1])`.
 - **Max**: tương tự.
 
+### Hình minh họa: Cây phân đoạn (mảng 4 phần tử)
+
+Gốc quản lý [0, 3]; mỗi nút chia đôi. Lá = 1 phần tử. Truy vấn đoạn [1, 2] hợp từ O(log n) nút.
+
+```mermaid
+flowchart TD
+    N1["[0,3]"] --> N2["[0,1]"]
+    N1 --> N3["[2,3]"]
+    N2 --> N4["[0]"]
+    N2 --> N5["[1]"]
+    N3 --> N6["[2]"]
+    N3 --> N7["[3]"]
+```
+
 ---
 
 ## 14.4. Mã giả (tổng đoạn)

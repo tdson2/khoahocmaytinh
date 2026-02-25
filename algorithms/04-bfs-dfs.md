@@ -18,6 +18,47 @@
 - Bắt đầu từ một đỉnh, thăm tất cả đỉnh kề trước khi đi sâu hơn.
 - Dùng hàng đợi: đẩy đỉnh vào queue, lấy ra và thăm các đỉnh chưa thăm kề với nó rồi đẩy vào queue.
 
+### Hình minh họa: BFS vs DFS trên cùng đồ thị
+
+**Đồ thị mẫu** (4 đỉnh, vô hướng):
+
+```mermaid
+flowchart LR
+    0((0)) --- 1((1))
+    0 --- 2((2))
+    1 --- 3((3))
+    2 --- 3((3))
+```
+
+**BFS từ 0** — duyệt theo **tầng** (gần nguồn trước). Thứ tự có thể: 0 → 1 → 2 → 3.
+
+```mermaid
+flowchart TD
+    subgraph Tầng0["Tầng 0"]
+        A0((0))
+    end
+    subgraph Tầng1["Tầng 1"]
+        A1((1))
+        A2((2))
+    end
+    subgraph Tầng2["Tầng 2"]
+        A3((3))
+    end
+    A0 --> A1
+    A0 --> A2
+    A1 --> A3
+    A2 --> A3
+```
+
+**DFS từ 0** — đi **sâu** theo một nhánh trước. Ví dụ: 0 → 1 → 3 → 2.
+
+```mermaid
+flowchart LR
+    Start((0)) --> 1((1))
+    1 --> 3((3))
+    3 -.->|backtrack| 2((2))
+```
+
 ### Mã giả BFS
 
 ```

@@ -4,6 +4,20 @@
 
 **Sắp xếp tô-pô (Topological Sort)** là một thứ tự tuyến tính của các đỉnh trong **đồ thị có hướng không chu trình (DAG)** sao cho với mọi cạnh (u → v), đỉnh u đứng **trước** v trong thứ tự đó. Ứng dụng: lập lịch công việc, biên dịch (phụ thuộc), thứ tự thực thi.
 
+### Hình minh họa: DAG và thứ tự tô-pô
+
+**Đồ thị DAG** (cạnh u → v nghĩa là "u phải trước v"):
+
+```mermaid
+flowchart LR
+    A((A)) --> B((B))
+    A --> C((C))
+    B --> D((D))
+    C --> D((D))
+```
+
+**Một thứ tự tô-pô**: A, B, C, D (hoặc A, C, B, D). **Kahn**: A bậc vào 0 → xử lý A; sau đó B, C; cuối D.
+
 | Thuộc tính | Giá trị |
 |------------|--------|
 | **Điều kiện** | Đồ thị phải là DAG (không có chu trình) |

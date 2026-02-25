@@ -18,6 +18,22 @@
 - **Đường tăng luồng (augmenting path)**: Đường từ s đến t trên **đồ thị thặng dư** (residual graph), trong đó cạnh (u,v) có capacity còn lại = c(u,v) - f(u,v), cạnh ngược (v,u) có capacity = f(u,v).
 - **Ford-Fulkerson**: Lặp lại: tìm một đường tăng luồng trên đồ thị thặng dư, tăng luồng dọc đường đó một lượng tối đa có thể; khi không còn đường tăng luồng thì luồng hiện tại là cực đại.
 
+### Hình minh họa: Mạng và luồng
+
+**Mạng** (s = nguồn, t = đích; số trên cạnh = capacity):
+
+```mermaid
+flowchart LR
+    s((s)) -->|10| A((A))
+    s -->|5| B((B))
+    A -->|8| C((C))
+    A -->|3| t((t))
+    B -->|5| C((B))
+    C -->|10| t
+```
+
+**Đường tăng luồng**: s → A → t (bottleneck 3) hoặc s → B → C → t. Sau nhiều bước tăng, tổng luồng = giá trị min-cut (ví dụ cắt {s} vs phần còn lại).
+
 ---
 
 ## 12.3. Định lý Min-Cut Max-Flow

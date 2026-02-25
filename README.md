@@ -20,6 +20,7 @@ Mỗi tài liệu có: ý tưởng, giải thích, ví dụ, công thức/mã gi
 | [📐 Thuật toán](#-thuật-toán)                                    | Cơ bản (1–6) · Nâng cao: Đồ thị (7–12), Chuỗi & CTDL (13–17), DP (18) |
 | [⚙️ Học máy (nền tảng)](#️-học-máy-nền-tảng--công-cụ)   | Tổng quan ML · DL · Attention · Loss · Optimizer · CV · Audio · NLP      |
 | [🧠 Deep Learning](#-deep-learning-mô-hình--ứng-dụng)            | Transformer · OCR · STT · TTS · RAG & Agents                                 |
+| [🌐 Ứng dụng thực tế](#-ứng-dụng-thực-tế-ví-dụ-dễ-hiểu)         | Ví dụ ứng dụng của từng phương pháp, thuật toán, mô hình                    |
 | [📁 Cấu trúc thư mục](#-cấu-trúc-thư-mục)                    | Sơ đồ thư mục dự án                                                       |
 
 ---
@@ -114,5 +115,64 @@ Transformer, mô hình đặc thù (OCR, STT, TTS) và ứng dụng (RAG, Agents
 | 3 | Speech-to-Text (ASR)  | Whisper, wav2vec, Conformer, CTC/attention, streaming                  | [03-speech-to-text.md](deep-learning/03-speech-to-text.md)                   |
 | 4 | Text-to-Speech (TTS)  | Tacotron, FastSpeech, VITS, HiFi-GAN, Bark, voice cloning              | [04-text-to-speech.md](deep-learning/04-text-to-speech.md)                   |
 | 5 | RAG & Agents          | Retrieve + generate, tool use, ReAct, chatbot tài liệu               | [05-applications-rag-agents.md](deep-learning/05-applications-rag-agents.md) |
+
+---
+
+## 🌐 Ứng dụng thực tế (ví dụ dễ hiểu)
+
+Các phương pháp, thuật toán và mô hình trong repo được dùng trong đời sống và sản phẩm như sau.
+
+### 📊 Toán học ứng dụng
+
+| Chủ đề | Ứng dụng thực tế |
+|--------|------------------|
+| **Xác suất & Thống kê** | **A/B test**: So sánh tỷ lệ click (CTR) giữa hai giao diện web để chọn bản tốt hơn. **Bayes**: Lọc spam (P(spam\|từ) từ tần suất từ trong thư spam/không spam). **MLE**: Ước lượng tham số mô hình từ dữ liệu (ví dụ xác suất chuyển đổi từ log). |
+| **Đạo hàm & Giải tích** | **Gradient descent**: Cách mọi mô hình ML (từ hồi quy đến neural net) “tìm điểm loss thấp nhất”. **Backprop**: Tính gradient từng layer trong mạng để cập nhật trọng số khi train. **Chain rule**: Nền tảng của autograd (PyTorch, TensorFlow). |
+| **Chuỗi số** | **Learning rate decay**: Giảm learning rate theo bước train (dạng $\eta_n = \eta_0 \cdot r^n$ hoặc $\eta_0/n$) để hội tụ ổn. **Cấp số nhân**: Tính xác suất “lần đầu thành công” trong phân phối hình học (ví dụ số lần quảng cáo đến khi có click). |
+
+### 📐 Thuật toán
+
+| Thuật toán | Ứng dụng thực tế |
+|------------|------------------|
+| **Tìm kiếm nhị phân** | Tìm tên trong danh bạ đã sắp theo ABC; tìm giá trong danh sách giá đã sort; game “đoán số trong khoảng 1–100” với gợi ý lớn hơn/nhỏ hơn. |
+| **Quick Sort** | Sắp xếp danh sách sản phẩm theo giá, ngày, tên; chuẩn bị dữ liệu trước khi dùng tìm kiếm nhị phân hoặc merge. |
+| **Dijkstra** | **Google Maps / Waze**: Đường đi ngắn nhất (theo thời gian hoặc km). Định tuyến trong mạng (router chọn đường ít trễ nhất). |
+| **BFS / DFS** | **BFS**: Tìm đường ngắn nhất theo số cạnh (mê cung, mạng xã hội “bạn của bạn”). **DFS**: Duyệt cây thư mục, crawl web, kiểm tra chu trình trong dependency (build phần mềm). |
+| **Quy hoạch động** | **Knapsack**: Chọn gói hàng tối ưu (trọng lượng/giá). **Min path**: Tổng chi phí nhỏ nhất qua nhiều bước. **Fibonacci**: Cơ sở để hiểu memoization và DP. |
+| **BST** | Index trong database (tìm, thêm, xóa theo khóa nhanh); từ điển trong bộ nhớ; cây tìm kiếm trong game (object theo vùng). |
+| **Bellman-Ford / Floyd-Warshall** | Đường đi khi có cạnh “âm” (ví dụ arbitrage tiền tệ: đổi A→B→C→A để lời). Floyd: bảng khoảng cách giữa mọi cặp sân bay. |
+| **MST (Kruskal / Prim)** | Thiết kế mạng (điện, cáp, nước) nối N điểm với tổng chiều dài/cost nhỏ nhất; clustering theo khoảng cách. |
+| **Topological Sort** | Thứ tự build các module phần mềm (module A phụ thuộc B → build B trước). Thứ tự học môn (môn tiên quyết trước). |
+| **SCC** | Phân tích mạng: nhóm trang link lẫn nhau; nhóm tài khoản giao dịch liên quan; chu trình phụ thuộc trong code. |
+| **Maximum Flow** | Luồng tối đa trong mạng (ống dẫn, băng thông); ghép cặp (job–worker, sinh viên–đề tài) khi mỗi bên có capacity. |
+| **KMP** | Tìm kiếm chuỗi con trong văn bản (Ctrl+F nâng cao, so khớp mẫu DNA), không cần quay lại từ đầu khi không khớp. |
+| **Segment Tree** | Truy vấn min/max/sum trên đoạn và cập nhật điểm (điểm số theo thời gian, giá cổ phiếu theo khoảng ngày). |
+| **DSU (Union-Find)** | “Hai người có cùng nhóm không?” khi gộp nhóm theo quan hệ (bạn bè, kết nối mạng); tìm thành phần liên thông động. |
+| **A\*** | Game: NPC tìm đường tránh chướng ngại. Robot: đường đi nhanh có thông tin heuristic (ước lượng khoảng cách đến đích). |
+| **Trie** | Gợi ý từ khi gõ (autocomplete), kiểm tra chính tả, từ điển tiền tố, đếm số từ có tiền tố cho trước. |
+| **Advanced DP** | **TSP**: Lộ trình giao hàng qua N điểm mỗi điểm đúng 1 lần. **LIS/LCS**: So sánh chuỗi (diff văn bản, genome). **Digit DP**: Đếm số trong khoảng thỏa điều kiện (ví dụ không chứa 4). |
+
+### ⚙️ Học máy (nền tảng)
+
+| Chủ đề | Ứng dụng thực tế |
+|--------|------------------|
+| **Tổng quan ML** | **Regression**: Dự đoán giá nhà, doanh số, nhiệt độ. **Classification**: Spam/không spam, nhận diện ảnh (chó/mèo), sentiment (tích cực/tiêu cực). **Clustering**: Nhóm khách hàng, gom tin tức cùng chủ đề. |
+| **Deep Learning cơ bản** | Mạng MLP làm bộ dự đoán (tabular), layer ẩn học đặc trưng; Backprop + optimizer là nền tảng train mọi mô hình neural. |
+| **Transformer & Attention** | BERT/GPT dùng trong search, gợi ý, phân loại văn bản; attention giúp mô hình “nhìn” đúng từ/cụm quan trọng trong câu. |
+| **Loss Functions** | MSE cho dự báo số; Cross-entropy cho phân loại; Focal Loss cho detection (nhiều nền, ít vật thể); Contrastive cho embedding (tìm ảnh tương tự). |
+| **Optimizer & Regularization** | Adam/AdamW: train transformer, CNN. Dropout, augmentation: giảm overfitting. L2: trọng số không quá lớn. |
+| **Computer Vision** | Nhận diện ảnh (Face ID, phân loại sản phẩm); detection (xe, người trên camera); segmentation (làm phông ảnh, y tế). |
+| **Âm thanh & Giọng nói** | Nhận diện giọng nói (trợ lý ảo, phụ đề); phân loại âm thanh (nhạc cụ, tiếng khóc); TTS (đọc tin, sách nói). |
+| **NLP** | Phân loại (sentiment, intent); NER (trích tên người, địa điểm); dịch máy; tóm tắt; chatbot, search semantic. |
+
+### 🧠 Deep Learning (mô hình & ứng dụng)
+
+| Chủ đề | Ứng dụng thực tế |
+|--------|------------------|
+| **Transformer (BERT, GPT, LLaMA)** | **ChatGPT, Claude, Gemini**: Chat, viết văn, code. **Tìm kiếm**: Embedding câu (BERT) để tìm tài liệu giống nghĩa. **Phân loại/NER**: Fine-tune BERT cho sentiment, trích thông tin. |
+| **OCR** | Scan CMND, hóa đơn, sách → chữ có thể copy/search; đọc biển số; số hóa tài liệu cũ; app đọc chữ qua camera. |
+| **Speech-to-Text (ASR)** | Phụ đề video/meeting trực tiếp; trợ lý ảo (Alexa, Siri, Google); ghi chú từ giọng nói; hỗ trợ người khiếm thính. |
+| **Text-to-Speech (TTS)** | Trợ lý ảo trả lời bằng giọng; sách nói; đọc tin; chatbot có giọng; clone giọng cho video/podcast. |
+| **RAG & Agents** | **RAG**: Chatbot hỏi đáp trên PDF/công văn nội bộ (retrieve đoạn liên quan rồi LLM trả lời). **Agents**: Trợ lý đặt lịch, tra thời tiết, tìm kiếm web, gọi API thay người dùng. |
 
 ---

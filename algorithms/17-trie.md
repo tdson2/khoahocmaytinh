@@ -19,6 +19,22 @@
   - Con trỏ (hoặc mảng) tới các nút con theo ký tự (ví dụ `children[26]` cho 'a'–'z').
   - Cờ `is_end` (hoặc số lượng chuỗi kết thúc tại nút).
 
+### Hình minh họa: Trie chứa "cat", "car", "card", "care"
+
+Mỗi cạnh là một ký tự; nút có dấu ✓ là kết thúc từ.
+
+```mermaid
+flowchart TD
+    root((root)) --> c[c]
+    c --> a[a]
+    a --> t[t ✓]
+    a --> r[r ✓]
+    r --> d[d ✓]
+    r --> e[e ✓]
+```
+
+**Tìm "car"**: root → c → a → r (✓) = có. **Tìm tiền tố "ca"**: root → c → a = có hai từ "cat", "car" (và "card", "care").
+
 ---
 
 ## 17.3. Mã giả
